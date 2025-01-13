@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yawai's Portfolio Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="./images/profile.jpeg"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header class="header" role="banner">
+      <a href="#" class="logo" aria-label="Htet Yawai's Logo">
+        <span>Htet Yawai</span>
+      </a>
+
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links" role="menu">
+          <li role="none">
+            <a href="#about" role="menuitem">About Me</a>
+          </li>
+          <li role="none">
+            <a href="#projects" role="menuitem">Projects Showcase</a>
+          </li>
+          <li role="none">
+            <a href="#contact" role="menuitem">Contact Form</a>
+          </li>
+          <li role="none">
+            <a href="#blog" role="menuitem">Blog Section</a>
+          </li>
+        </ul>
+      </nav>
+      <button
+        class="fa-solid fa-bars"
+        id="menu-icon"
+        aria-label="Toggle Navigation Menu"
+        aria-expanded="false"
+        aria-controls="menu"
+      ></button>
+    </header>
+
+    <main>
+      <!-- About section -->
+      <section
+        id="about"
+        class="about"
+        role="region"
+        aria-labelledby="about-title"
+      >
+        <div class="about-container">
+          <img
+            src="images/profile.jpeg"
+            alt="Profile picture of Htet Yawai"
+            aria-hidden="true"
+          />
+
+          <div class="info-box">
+            <div class="text">
+              <h3 id="about-title">Hi, I'm</h3>
+              <h1>Htet Yawai</h1>
+              <p>Computer Science Student at Rangsit University</p>
+            </div>
+
+            <div class="btn-group">
+              <a href="path/to/cv.pdf" class="btn" download="Htet_Yawai_CV">
+                Download CV
+              </a>
+            </div>
+
+            <div class="socials">
+              <a
+                href="https://github.com/HtetYawai"
+                target="_blank"
+                aria-label="GitHub"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <a
+                href="https://web.facebook.com/htet.yawai.31"
+                target="_blank"
+                aria-label="Facebook"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/hiii_ywaiii/"
+                target="_blank"
+                aria-label="Instagram"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a
+                href="mailto:htetyawai02@gmail.com"
+                aria-label="Email Htet Yawai"
+                ><i class="fa-solid fa-envelope"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects showcase -->
+      <section
+        id="projects"
+        class="projects"
+        role="region"
+        aria-labelledby="projects-title"
+      >
+        <h2 id="projects-title" class="projects-title">Projects Showcase</h2>
+        <div class="projects-info">
+          <article class="project" role="article">
+            <div class="project-text">
+              <h3>Mobile Programming</h3>
+              <i class="fa-brands fa-flutter" aria-hidden="true"></i>
+              <p>Developed a Movie app using Flutter.</p>
+              <div class="btn-group">
+                <a
+                  href="https://github.com/HtetYawai/Movie-App"
+                  target="_blank"
+                  aria-label="View Movie App on GitHub"
+                >
+                  <div class="btn">GitHub Repository</div>
+                </a>
+              </div>
+            </div>
+            <img
+              src="images/movie.png"
+              alt="Screenshot of the Movie app project"
+              class="project-image"
+            />
+          </article>
+
+          <!-- Additional projects follow the same structure -->
+        </div>
+      </section>
+
+      <!-- Contact Form -->
+      <section
+        id="contact"
+        class="contact"
+        role="region"
+        aria-labelledby="contact-title"
+      >
+        <div class="input-box">
+          <h3 id="contact-title" class="section-title">Contact Me</h3>
+          <form
+            action="submit_form_url"
+            method="POST"
+            aria-label="Contact form"
+          >
+            <div class="input">
+              <label for="email">Email:</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="your_mail@gmail.com"
+                required
+              />
+              <i class="fa-regular fa-envelope" aria-hidden="true"></i>
+            </div>
+            <div class="input">
+              <label for="name">Name:</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Your name"
+                required
+              />
+              <i class="fa-regular fa-user" aria-hidden="true"></i>
+            </div>
+            <button type="submit" class="btn">Submit</button>
+          </form>
+        </div>
+      </section>
+
+      <!-- Blog section -->
+      <section
+        id="blog"
+        class="blog"
+        role="region"
+        aria-labelledby="blog-title"
+      >
+        <h1 id="blog-title" class="blog-title">My Programming Journey</h1>
+        <div class="blog-info">
+          <article class="blog-text" role="article">
+            <h2>🐍 Starting with Python</h2>
+            <p>
+              I began my programming journey with Python, exploring loops,
+              functions, and problem-solving.
+            </p>
+          </article>
+
+          <!-- Additional blog posts follow the same structure -->
+        </div>
+      </section>
+    </main>
+
+    <footer role="contentinfo">
+      <nav aria-label="Footer Navigation">
+        <ul>
+          <li>
+            <a href="#about">About Me</a>
+          </li>
+          <li>
+            <a href="#projects">Projects Showcase</a>
+          </li>
+          <li>
+            <a href="#contact">Contact Form</a>
+          </li>
+          <li>
+            <a href="#blog">Blog Section</a>
+          </li>
+        </ul>
+      </nav>
+      <p class="copyright">© All Rights Reserved | Htet Yawai</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
